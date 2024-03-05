@@ -26,5 +26,3 @@ Music Application es una plataforma que permite a los usuarios aprender música 
 3. Instala las dependencias del proyecto usando `npm install`.
 4. Inicia el servidor de desarrollo usando `npm run dev`.
 5. Abre tu navegador y navega a [http://localhost:5173](http://localhost:5173) para ver la aplicación en acción.
-
-## Contacto
