@@ -9,7 +9,7 @@ export default function PreviewCourse() {
   };
 
   return (
-    <div className="flex flex-col items-center bg-black justify-center space-y-4 w-1/3">
+    <div className="flex flex-col items-center justify-center space-y-4 mt-10">
       <button
         onClick={handleToggle}
         className={`px-4 py-2 text-white ${isBeginner ? 'bg-green-500' : 'bg-gray-500'}`}
@@ -17,7 +17,7 @@ export default function PreviewCourse() {
         {isBeginner ? 'Principiante' : 'Avanzado'}
       </button>
       <div>
-        <div className="video-container">
+        <div className="video-container my-2">
           <iframe
             width="260"
             height="215"
@@ -26,9 +26,10 @@ export default function PreviewCourse() {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            className='rounded-lg'
           ></iframe>
         </div>
-        <div className="video-container">
+        <div className="video-container my-2">
           <iframe
             width="260"
             height="215"
@@ -37,10 +38,11 @@ export default function PreviewCourse() {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            className='rounded-lg'
           ></iframe>
         </div>
       </div>
-      <button className="px-4 py-2 bg-orange-500 text-white">
+      <button className="px-4 py-2 bg-orange-500 text-white rounded-lg ">
         ¿Quieres conocer más? <p className='font-sans font-bold text-xl text-white'>REGISTRATE</p>
       </button>
     </div>
