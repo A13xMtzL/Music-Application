@@ -1,20 +1,13 @@
-import { useState } from 'react';
-
+import { VscTriangleDown } from 'react-icons/vsc';
 
 export default function PreviewCourse() {
-  const [isBeginner, setIsBeginner] = useState(false);
-
-  const handleToggle = () => {
-    setIsBeginner(!isBeginner);
-  };
 
   return (
     <div className="flex flex-col items-center justify-center space-y-4 mt-10">
-      <button
-        onClick={handleToggle}
-        className={`px-4 py-2 text-white ${isBeginner ? 'bg-green-500' : 'bg-gray-500'}`}
-      >
-        {isBeginner ? 'Principiante' : 'Avanzado'}
+      <button className="flex px-4 py-2 text-xl bg-transparent rounded-lg text-orange-500 font-extrabold">
+        PRINCIPIANTE
+        <VscTriangleDown className='m-1 flex items-center justify-center'/>
+
       </button>
       <div>
         <div className="video-container my-2">
@@ -29,6 +22,7 @@ export default function PreviewCourse() {
             className='rounded-lg'
           ></iframe>
         </div>
+
         <div className="video-container my-2">
           <iframe
             width="260"
