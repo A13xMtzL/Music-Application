@@ -1,31 +1,26 @@
-import './App.css'
-import { CourseOverview } from './components/CourseOverview'
-import { NavBar } from './components/Navbar'
-import PreviewCourse from './components/PreviewCourse'
-import WhoAmI from './components/WhoAmI'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import './App.css';
+import Element404 from './components/Element404';
+import { NavBar } from './components/layout/Navbar';
+import AboutPage from './pages/AboutPage';
+import AllCourses from './pages/AllCourses';
+import CoursePage from './pages/CoursePage';
 
 function App() {
   return (
     <>
-      <div className='flex justify-between items-center'>
+      <Router>
         <NavBar />
-        <div className='flex justify-between'>
-          {/* Elemento a la izquierda */}
-          <div className='flex flex-col w-1/5 justify-end ml-[-50px]'>
-            <WhoAmI />
-          </div>
-          {/* Elemento del centro, quiero que este abarque todo el archivo */}
-          <div className='flex-grow w-1/2'>
-            <CourseOverview />
-          </div>
-          {/* Elemento de la derecha */}
-          <div className=''>
-            <PreviewCourse />
-          </div>
-        </div>
-      </div>
+        <Routes>
+          <Route path="/" element={<CoursePage />} />{/*---> Se cambia por el archivo de inicio */}
+          <Route path="/guitar" element={<CoursePage />} />
+          <Route path="/courses" element={<AllCourses />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={<Element404 />} />
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
 export default App
