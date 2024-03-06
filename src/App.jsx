@@ -9,9 +9,9 @@ function App() {
     <>
       <div className='flex justify-between items-center'>
         <NavBar />
-        <div className='flex justify-between '>
+        <div className='flex justify-between'>
           {/* Elemento a la izquierda */}
-          <div className='flex flex-col w-1/5  justify-end'>
+          <div className='flex flex-col w-1/5 justify-end ml-[-50px]'>
             <WhoAmI />
           </div>
           {/* Elemento del centro, quiero que este abarque todo el archivo */}
