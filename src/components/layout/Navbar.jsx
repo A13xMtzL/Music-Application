@@ -43,6 +43,9 @@ export const NavBar = () => {
             <li>
               <Link to="/about" className="block py-2 px-3 text-trasnbg-transparent  rounded md:hover:bg-transparent  transition-transform md:hover:text-purple-700 md:p-0 md:dark:hover:text-purple-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent  dark:border-gray-700">¿Quienes somos?</Link>
             </li>
+            <li>
+              <Link to="/faq" className="block py-2 px-3 text-trasnbg-transparent  rounded md:hover:bg-transparent  transition-transform md:hover:text-purple-700 md:p-0 md:dark:hover:text-purple-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent  dark:border-gray-700">Preguntas Frecuentes</Link>
+            </li>
           </ul>
         </div>
       </div>
