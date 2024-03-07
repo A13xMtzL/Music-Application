@@ -5,6 +5,8 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ], theme: {
     extend: {
+      transform: ['hover', 'focus'],
+      scale: ['active', 'group-hover'],
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
