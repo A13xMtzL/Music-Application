@@ -9,7 +9,7 @@ export default function CoursePage() {
       <div className='flex justify-between items-center'>
         <div className='flex justify-between'>
           {/* Elemento a la izquierda */}
-          <div className='flex flex-col w-[28%] justify-end ml-[-120px]'>
+          <div className='flex flex-col w-[28%] justify-end ml-[-100px]'>
             <CourseDescription />
           </div>
           {/* Elemento del centro, quiero que este abarque todo el archivo */}
