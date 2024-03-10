@@ -1,16 +1,11 @@
 import { VscTriangleDown } from 'react-icons/vsc';
 
 export default function PreviewCourse({course}) {
-  // const videoId = '1g0DoZH6mXTX-Dim3i1bp9FZc9ASgd4T3'; // Reemplaza esto con tu ID de video de Google Drive
-
-
-
   return (
     <div className="flex flex-col items-center justify-center space-y-4 mt-10">
       <button className="flex px-4 py-2 text-xl bg-transparent rounded-lg text-orange-500 font-extrabold">
         PRINCIPIANTE
         <VscTriangleDown className='m-1 flex items-center justify-center'/>
-
       </button>
       <div>
         <div className="video-container my-2">
