@@ -14,7 +14,6 @@ function App() {
   const guitarCourse = {
     title: 'Guitarra',
     description: 'En este curso de guitarra, aprenderás desde los fundamentos básicos hasta técnicas avanzadas para mejorar tu habilidad en el instrumento. Exploraremos una variedad de acordes, patrones de rasgueo y técnicas de improvisación para ayudarte a expresarte musicalmente de manera creativa. Con lecciones dinámicas y divertidas, te guiaremos en tu viaje para convertirte en un guitarrista versátil y seguro.',
-    // videoId: '1g0DoZH6mXTX-Dim3i1bp9FZc9ASgd4T3'
     videoId : '1g0DoZH6mXTX-Dim3i1bp9FZc9ASgd4T3' // Reemplaza esto con tu ID de video de Google Drive
 
   }
