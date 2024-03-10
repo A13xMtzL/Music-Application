@@ -1,7 +1,7 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
-export default function CourseDescription() {
+export default function CourseDescription({course}) {
   const [showScrollBar, setShowScrollBar] = useState(false);
   const controls = useAnimation();
 
@@ -22,7 +22,7 @@ export default function CourseDescription() {
           animate={controls}
         />
         <p className="text-base leading-relaxed tracking-wide text-start p-2">
-          En este curso de guitarra, aprenderás desde los fundamentos básicos hasta técnicas avanzadas para mejorar tu habilidad en el instrumento. Exploraremos una variedad de acordes, patrones de rasgueo y técnicas de improvisación para ayudarte a expresarte musicalmente de manera creativa. Con lecciones dinámicas y divertidas, te guiaremos en tu viaje para convertirte en un guitarrista versátil y seguro.
+          {course.description}
         </p>
       </div>
     </div>

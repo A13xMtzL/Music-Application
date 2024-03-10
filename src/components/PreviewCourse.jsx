@@ -1,7 +1,7 @@
 import { VscTriangleDown } from 'react-icons/vsc';
 
-export default function PreviewCourse() {
-  const videoId = '1g0DoZH6mXTX-Dim3i1bp9FZc9ASgd4T3'; // Reemplaza esto con tu ID de video de Google Drive
+export default function PreviewCourse({course}) {
+  // const videoId = '1g0DoZH6mXTX-Dim3i1bp9FZc9ASgd4T3'; // Reemplaza esto con tu ID de video de Google Drive
 
 
 
@@ -30,7 +30,7 @@ export default function PreviewCourse() {
           <iframe
             width="260"
             height="215"
-            src={`https://drive.google.com/file/d/${videoId}/preview`}
+            src={`https://drive.google.com/file/d/${course.videoId}/preview`}
             title="Google Drive video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

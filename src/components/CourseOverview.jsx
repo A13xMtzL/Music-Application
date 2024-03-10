@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 
-export const CourseOverview = () => {
+export const CourseOverview = ({course}) => {
   return (
     <div className='font-sans h-full relative'>
       <div className="flex items-center justify-center">
         <div className="text-center pt-20 relative z-10">
           <p className="text-4xl text-white">APRENDE A TOCAR </p>
-          <h1 className="text-8xl font-bold text-orange-500">GUITARRA</h1>
+          <h1 className="text-8xl font-bold text-orange-500">{course.title}</h1>
         </div>
         {/* Contenedor para las imágenes */}
         <div className="absolute inset-0 flex justify-center mt-10 space-x-1">
