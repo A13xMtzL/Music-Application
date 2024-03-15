@@ -22,7 +22,7 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="flex justify-center">
-        <SocialIcon url="https://facebook.com/" className="mr-4" target="_blank" fgColor="#fff" bgColor="transparent" style={{ height: 50, width: 50 }} />
+        <SocialIcon url="https://facebook.com/" className="mr-4" target="_blank" fgColor="#fff" bgColor="transparent" style={{ height: 50, width: 50 }} /> {/* Se deben de agregar los links de las redes sociales directamente en 'url' */}
         <SocialIcon url="https://twitter.com/" className="mr-4" target="_blank" fgColor="#fff" bgColor="transparent" style={{ height: 50, width: 50 }} />
         <SocialIcon url="https://instagram.com/" className="mr-4" target="_blank" fgColor="#fff" bgColor="transparent" style={{ height: 50, width: 50 }} />
       </div>

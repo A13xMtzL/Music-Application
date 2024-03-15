@@ -1,9 +1,23 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 
 
 export const NavBar = () => {
+  const [isScrolled, setIsScrolled] = useState(true);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrolled = window.scrollY > 50;
+      setIsScrolled(scrolled);
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+
   return (
-    <nav className="bg-white dark:bg-transparent hover:bg-[#15101081] transition-colors duration-200 fixed w-full z-20 top-0 start-0">
+    <nav className={`bg-white dark:bg-transparent ${isScrolled ? 'dark:bg-[#151010e9]' : 'dark:bg-transparent'} hover:bg-[#151010e9] transition-colors duration-300 fixed w-full z-20 top-0 start-0`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/">
           <a className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -34,9 +48,9 @@ export const NavBar = () => {
             <li>
               <Link to="/guitar" className="block py-2 px-3 text-trasnbg-transparent   rounded md:hover:bg-transparent  md:hover:text-purple-700 md:p-0 md:dark:hover:text-purple-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent  transition-transform dark:border-gray-700">Guitarra</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/piano" className="block py-2 px-3 text-trasnbg-transparent  rounded md:hover:bg-transparent  transition-transform md:hover:text-purple-700 md:p-0 md:dark:hover:text-purple-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent   dark:border-gray-700">Piano</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/courses" className="block py-2 px-3 text-trasnbg-transparent  rounded md:hover:bg-transparent  transition-transform md:hover:text-purple-700 md:p-0 md:dark:hover:text-purple-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent   dark:border-gray-700">Cursos</Link>
             </li>
